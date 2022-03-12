@@ -1,0 +1,13 @@
+"results": [
+        {
+            "id": 21,
+            "name": "Testicle Monster Dimension",
+            "type": "Dimension",
+            "dimension": "Testicle Monster Dimension",
+            "residents": [
+                "https://rickandmortyapi.com/api/character/7",
+                "https://rickandmortyapi.com/api/character/436"
+            ],
+            "url": "https://rickandmortyapi.com/api/location/21",
+            "created": "2017-11-18T19:41:01.605Z"
+        },
