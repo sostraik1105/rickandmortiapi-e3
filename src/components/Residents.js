@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-export const Residents = ({url, key}) => {
+export const Residents = ({url}) => {
 
     const [character, setCharacter] = useState({})
 
@@ -10,11 +10,10 @@ export const Residents = ({url, key}) => {
             .then(res => setCharacter(res.data))
     }, [url]);
 
-    console.log(character)
     return (
-        <div id={key}>
+        <div id={character.id}>
             <h1>{character.name}</h1>
-            <img src={character.image} alt="" />
+            <img src={character.image} alt={character.name} />
         </div>
     )
 }
