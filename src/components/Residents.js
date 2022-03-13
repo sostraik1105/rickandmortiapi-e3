@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { CharacterInfo } from './CharacterInfo';
 
 export const Residents = ({url}) => {
 
@@ -10,10 +11,18 @@ export const Residents = ({url}) => {
             .then(res => setCharacter(res.data))
     }, [url]);
 
+    console.log(character);
+
     return (
         <div id={character.id}>
-            <h1>{character.name}</h1>
-            <img src={character.image} alt={character.name} />
+            <div className='image'>
+                <img src={character.image} alt={character.name} />
+                <span>{character.status}</span>
+            </div>
+            <div className='charInfo'>
+                <h3>{character.name}</h3>
+                <CharacterInfo character={character} />
+            </div>
         </div>
     )
 }
