@@ -13,13 +13,13 @@ export const SearchBox = ({changeLocation}) => {
     }
 
     return (
-        <div>
-            <input 
+        <div className='Search_one'>
+            <input className='input'
                 type="text" 
                 onChange={e=>setSearch(e.target.value)}
                 value={search}
             />
-            <button onClick={searchLocation}>
+            <button className='Btn' onClick={searchLocation}>
                 Search
             </button>
         </div>
