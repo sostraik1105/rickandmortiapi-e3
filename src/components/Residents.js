@@ -14,13 +14,13 @@ export const Residents = ({url}) => {
     console.log(character);
 
     return (
-        <div id={character.id}>
+        <div className='h1_' id={character.id}>
             <div className='image'>
                 <img src={character.image} alt={character.name} />
                 <span>{character.status}</span>
             </div>
             <div className='charInfo'>
-                <h3>{character.name}</h3>
+                <h3 className='dos'>{character.name}</h3>
                 <CharacterInfo character={character} />
             </div>
         </div>

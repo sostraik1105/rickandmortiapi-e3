@@ -6,6 +6,7 @@ import { SearchBox } from './SearchBox';
 import { ResidentsList } from './ResidentsList';
 import { LocationInfo } from './LocationInfo';
 
+
 export const FindByLocation = () => {
 
     const [ location, setLocation ] = useState({});

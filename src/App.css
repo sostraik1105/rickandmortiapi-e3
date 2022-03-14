@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    background-color: #12444d;
+    color: white;
+}
+/* Buscador */
+.Search_one{
+    background-image: url(./fondouno.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+}
+.input{
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    margin-right: 10px;
+    position: absolute;
+    top: 20rem;
+    left: 30%;
+}
+.Btn{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 20rem;
+    left: 55%;  
+    border-radius: 10%;
+}
+.Btn:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8%);
+}
+/* Cuadro informativo de aliens */
+.infos{
+    width: 80%;
+    padding-left: 13rem;
+}
+.info_one{
+    color: white;
+    background-color:#062226;
+    display: grid;
+    grid-auto-flow: column;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 2rem ;
+}
+.info_one:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5%);
+}
+
+/* Residentes*/
+
+.card{
+        max-width: 1540px;
+        margin: 0 auto;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 3.8rem;
+}
+.card img{
+    border-radius: 5px;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card span{
+    position: relative;
+    bottom: 17rem;
+    right: 18rem;
+    background-color: white;
+    color: #062226;
+    border-radius: 5px;
+    
+}
+.h1_{
+    text-align: center; 
+    
+}
+.uno{
+    background-color: #062226;
+    border-radius: 5px;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+.uno_info{
+    padding-top: 0.8rem;
+}
+.dos{
+    width: 300px;
+    padding-bottom: 0.5rem;
+}
