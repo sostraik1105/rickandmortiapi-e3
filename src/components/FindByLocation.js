@@ -27,7 +27,7 @@ export const FindByLocation = () => {
             
             ? <LocationInfo location={location}/>
 
-            : <h2>loading</h2>
+            : <h2>Sorry, We don't have information about this location</h2>
         }
         <ResidentsList charList={location.residents} />           
         

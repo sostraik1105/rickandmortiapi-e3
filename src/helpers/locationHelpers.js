@@ -1,5 +1,5 @@
 const randomLocation = () => {
-    return Math.floor(Math.random() * 126)
+    return Math.floor((Math.random() * 126)+1)
 }
 
 const generalId = (char = '') => {

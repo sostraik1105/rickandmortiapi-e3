@@ -2,6 +2,9 @@ import React from 'react'
 import { generalId } from '../helpers/locationHelpers'
 
 export const CharacterInfo = ({character}) => {
+
+
+    console.log(character)
     return (
         <section className='info'>
             <div className='uno'>
@@ -15,11 +18,7 @@ export const CharacterInfo = ({character}) => {
                 </article>
                 <article>
                     <h3>First apparition</h3>
-                    <p>
-                        {
-                            (character={} ? "loading" : (character.episode.length === 0) ? generalId(character?.episode) : `${generalId(character?.episode[0])}`)
-                        }
-                    </p>
+                    <p>{character!== null ? generalId(character.episode?.[0]) : `Sorry, We don't have information about this location`}</p>
                 </article>
             </div>
         </section>
